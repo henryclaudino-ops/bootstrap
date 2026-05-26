@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fazbear Archives | Sobre</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black border-bottom border-danger sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-danger" href="index.html">Fazbear Archives</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal"
+                aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menu de navegação">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menuPrincipal">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Início</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Animatronics
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark">
+                            <li><a class="dropdown-item" href="animatronics.html#freddy">Freddy</a></li>
+                            <li><a class="dropdown-item" href="animatronics.html#bonnie">Bonnie</a></li>
+                            <li><a class="dropdown-item" href="animatronics.html#chica">Chica</a></li>
+                            <li><a class="dropdown-item" href="animatronics.html#foxy">Foxy</a></li>
+                            <li><a class="dropdown-item" href="animatronics.html#puppet">Puppet</a></li>
+                            <li><a class="dropdown-item" href="animatronics.html#golden">Golden Freddy</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="sobre.html">Sobre</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+    <main class="container my-5">
+        <section class="mb-5">
+            <span class="badge badge-danger-soft mb-2">Documentação resumida</span>
+            <h1 class="section-title">Sobre o Projeto</h1>
+            <p>
+                O projeto <strong>Fazbear Archives</strong> foi desenvolvido como um site temático utilizando
+                Bootstrap 5 como principal ferramenta de estilização, responsividade e organização do layout.
+            </p>
+        </section>
+
+        <section class="row g-4 mb-5">
+            <article class="col-12 col-lg-6">
+                <div class="info-box p-4 h-100">
+                    <h2 class="h4">Tema escolhido</h2>
+                    <p>
+                        O tema escolhido foi Five Nights at Freddy's, uma franquia de terror com animatronics,
+                        câmeras de segurança, pizzaria abandonada e suspense noturno.
+                    </p>
+                </div>
+            </article>
+
+            <article class="col-12 col-lg-6">
+                <div class="info-box p-4 h-100">
+                    <h2 class="h4">Objetivo</h2>
+                    <p>
+                        Criar um site responsivo com múltiplas páginas, componentes do Bootstrap e uma experiência
+                        visual coerente com o tema escolhido.
+                    </p>
+                </div>
+            </article>
+        </section>
+
+        <section class="mb-5">
+            <h2 class="section-title mb-4">Componentes Bootstrap usados</h2>
+
+            <div class="accordion" id="accordionBootstrap">
+                <div class="accordion-item">
+                    <h3 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#itemNavbar" aria-expanded="true" aria-controls="itemNavbar">
+                            Navbar e Dropdown
+                        </button>
+                    </h3>
+                    <div id="itemNavbar" class="accordion-collapse collapse show" data-bs-parent="#accordionBootstrap">
+                        <div class="accordion-body">
+                            A barra de navegação conecta as três páginas e o dropdown leva diretamente aos personagens.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h3 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#itemCarousel" aria-expanded="false" aria-controls="itemCarousel">
+                            Carousel
+                        </button>
+                    </h3>
+                    <div id="itemCarousel" class="accordion-collapse collapse" data-bs-parent="#accordionBootstrap">
+                        <div class="accordion-body">
+                            O carousel da página inicial possui três imagens, indicadores e botões de navegação.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h3 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#itemAvancados" aria-expanded="false" aria-controls="itemAvancados">
+                            Modal, Collapse, Offcanvas e Cards
+                        </button>
+                    </h3>
+                    <div id="itemAvancados" class="accordion-collapse collapse" data-bs-parent="#accordionBootstrap">
+                        <div class="accordion-body">
+                            O projeto usa modal para ficha de personagem, collapse para relatório, offcanvas para dicas
+                            e cards para organizar informações dos animatronics.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="info-box p-4 mb-5">
+            <h2 class="section-title">Estrutura do Projeto</h2>
+            <ul>
+                <li><strong>index.html:</strong> página inicial com carousel, cards, modal e seção flex.</li>
+                <li><strong>animatronics.html:</strong> catálogo dos personagens com cards e tabela.</li>
+                <li><strong>sobre.html:</strong> explicação do projeto e componentes usados.</li>
+                <li><strong>css/style.css:</strong> arquivo de personalização visual.</li>
+                <li><strong>img/:</strong> imagens SVG usadas no carousel e nos cards.</li>
+            </ul>
+        </section>
+
+        <section class="info-box p-4">
+            <h2 class="section-title">Teste de Toast</h2>
+            <p>
+                Clique no botão para exibir uma notificação usando o componente Toast do Bootstrap.
+            </p>
+
+            <button type="button" class="btn btn-danger" id="liveToastBtn">Mostrar Toast</button>
+
+            <div class="toast-container position-fixed bottom-0 end-0 p-3">
+                <div id="liveToast" class="toast text-bg-dark border-danger" role="alert" aria-live="assertive"
+                    aria-atomic="true">
+                    <div class="toast-header bg-black text-light">
+                        <strong class="me-auto text-danger">Fazbear Archives</strong>
+                        <small>agora</small>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="toast"
+                            aria-label="Fechar"></button>
+                    </div>
+                    <div class="toast-body">
+                        Projeto Bootstrap funcionando com componente avançado!
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-black text-light border-top border-danger py-4 mt-5">
+    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+        <p class="mb-0">Projeto escolar desenvolvido com Bootstrap 5.</p>
+        <p class="mb-0 small text-secondary">Tema: Five Nights at Freddy's — fan site educacional.</p>
+    </div>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const toastTrigger = document.getElementById('liveToastBtn');
+        const toastLive = document.getElementById('liveToast');
+
+        if (toastTrigger) {
+            const toastBootstrap = bootstrap.Toast.getOrCreateInstance(toastLive);
+            toastTrigger.addEventListener('click', () => {
+                toastBootstrap.show();
+            });
+        }
+    </script>
+</body>
+
+</html>

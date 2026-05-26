@@ -1,0 +1,116 @@
+:root {
+    --fnaf-red: #dc3545;
+    --fnaf-dark: #090909;
+    --fnaf-card: #151515;
+    --fnaf-text: #f4f4f4;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background:
+        radial-gradient(circle at top left, rgba(220, 53, 69, 0.18), transparent 28rem),
+        linear-gradient(180deg, #070707 0%, #111 45%, #080808 100%);
+    color: var(--fnaf-text);
+    min-height: 100vh;
+}
+
+.navbar-brand {
+    letter-spacing: 1px;
+}
+
+.hero-carousel {
+    background-color: #000;
+}
+
+.hero-img {
+    height: 520px;
+    object-fit: cover;
+    filter: brightness(0.65);
+}
+
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.55);
+    border-left: 4px solid var(--fnaf-red);
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+.section-title {
+    border-left: 5px solid var(--fnaf-red);
+    padding-left: 0.8rem;
+}
+
+.card {
+    background-color: var(--fnaf-card);
+    color: var(--fnaf-text);
+    border: 1px solid rgba(220, 53, 69, 0.28);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 0 24px rgba(220, 53, 69, 0.35);
+}
+
+.card-img-top {
+    height: 260px;
+    object-fit: cover;
+    background-color: #000;
+}
+
+.info-box {
+    background-color: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(220, 53, 69, 0.25);
+    border-radius: 1rem;
+}
+
+.flex-showcase img {
+    max-height: 330px;
+    object-fit: cover;
+}
+
+.badge-danger-soft {
+    background-color: rgba(220, 53, 69, 0.17);
+    color: #ffb3bd;
+    border: 1px solid rgba(220, 53, 69, 0.45);
+}
+
+.table-dark-custom {
+    --bs-table-bg: #151515;
+    --bs-table-border-color: rgba(220, 53, 69, 0.3);
+}
+
+.accordion {
+    --bs-accordion-bg: #151515;
+    --bs-accordion-color: #f4f4f4;
+    --bs-accordion-btn-bg: #111;
+    --bs-accordion-btn-color: #fff;
+    --bs-accordion-active-bg: #2a0b0f;
+    --bs-accordion-active-color: #fff;
+    --bs-accordion-border-color: rgba(220, 53, 69, 0.3);
+}
+
+.modal-content,
+.offcanvas {
+    background-color: #111;
+    color: #fff;
+    border: 1px solid rgba(220, 53, 69, 0.45);
+}
+
+@media (max-width: 768px) {
+    .hero-img {
+        height: 360px;
+    }
+
+    .carousel-caption {
+        position: static;
+        border-radius: 0;
+    }
+
+    .card-img-top {
+        height: 220px;
+    }
+}
